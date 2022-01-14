@@ -5,7 +5,7 @@ const create = async (data) => {
 };
 
 const read = async (username) => {
-  return await User.findOne(username);
+  return await User.findOne({ username });
 };
 
 const list = async () => {
